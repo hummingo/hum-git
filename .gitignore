@@ -1,0 +1,11 @@
+# ignore build directory in project root directory
+/build/
+
+# ignore all build directory
+build/
+
+# not ignore .gitignore file
+!.gitignore
+
+# ignore all log file
+*.log
