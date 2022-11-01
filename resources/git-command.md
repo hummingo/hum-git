@@ -37,14 +37,30 @@ git checkout -b <new-branch>
 git checkout -b <new-branch> <old-branch>
 git switch <branch>
 git merge 
+git stash
+git stash pop
+git stash apply stash@{0}
+git log
 ```
-
-
-
-
-
-
-
+### Patching
+```
+git format-patch HEAD^
+git diff . >> temp.diff
+git apply patch-file.patch
+git apply --reject patch-file.patch
+git apply diff-file.diff
+git cherry-pick commit-id -m 1
+```
+### Sharing and Updating Projects
+```
+git remote add remote-name github-address
+git remote add origin git@github.com:hummingo/hum-git.git
+git remote remove origin
+git push origin master
+git pull origin master
+git push -u origin master
+git push
+```
 
 
 
